@@ -2,10 +2,6 @@
 
 A payment operations dashboard inspired by the [openMF PH-EE Operations Web](https://github.com/openMF/ph-ee-operations-web-react) project. Built as part of my C4GT 2025 application to demonstrate familiarity with the required tech stack.
 
-## Screenshots
-
-<!-- Add screenshots here after deployment -->
-
 ## Features
 
 - Stat cards for Total Transactions, Success Rate, Failed, and Pending
