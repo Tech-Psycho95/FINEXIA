@@ -4,6 +4,7 @@ import StatCard from './components/StatCard';
 import TransactionsTable from './components/TransactionsTable';
 import TransactionVolumeChart from './components/TransactionVolumeChart';
 import TransactionTypeChart from './components/TransactionTypeChart';
+import CurrencyRates from './components/CurrencyRates';
 import { DollarSign, CheckCircle, XCircle, Clock } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -39,9 +40,14 @@ function App() {
           </div>
           <div className="grid gap-8">
             <TransactionsTable />
-            <div className="grid md:grid-cols-2 gap-8">
-              <TransactionVolumeChart />
-              <TransactionTypeChart />
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="md:col-span-2">
+                <TransactionVolumeChart />
+              </div>
+              <div className="space-y-8">
+                <TransactionTypeChart />
+                <CurrencyRates />
+              </div>
             </div>
           </div>
         </main>

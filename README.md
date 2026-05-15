@@ -1,61 +1,44 @@
 # Finexia - Financial Dashboard
 
-This is the frontend for Finexia, a financial dashboard that allows users to visualize and manage their income and expenses.
+A payment operations dashboard inspired by the [openMF PH-EE Operations Web](https://github.com/openMF/ph-ee-operations-web-react) project. Built as part of my C4GT 2025 application to demonstrate familiarity with the required tech stack.
+
+## Screenshots
+
+<!-- Add screenshots here after deployment -->
 
 ## Features
 
-- View a summary of total income, total expenses, and net income.
-- See a list of recent transactions.
-- Filter transactions by type, status, and date.
-- Visualize transaction volume and types with interactive charts.
+- Stat cards for Total Transactions, Success Rate, Failed, and Pending
+- Transaction table with search and status filter (G2P / P2G / Voucher)
+- 7-Day Transaction Volume chart (live data via CoinGecko API)
+- Transaction Breakdown bar chart by type
+- Live Currency Rates widget (EUR, GBP, INR via Frankfurter API)
 
 ## Tech Stack
 
 - **Frontend:** React, Vite, Tailwind CSS
-- **UI Components:** shadcn/ui
+- **UI Components:** shadcn/ui (Radix)
 - **Charts:** Recharts
 - **Icons:** Lucide React
+- **Live Data:** CoinGecko API, Frankfurter API
 
 ## Getting Started
 
 ### Prerequisites
-
 - Node.js (v18 or later)
-- npm or yarn
 
 ### Installation
-
-1.  Clone the repository:
-    ```bash
-    git clone <repository-url>
-    ```
-2.  Navigate to the project directory:
-    ```bash
-    cd finexia-frontend
-    ```
-3.  Install the dependencies:
-    ```bash
-    npm install
-    ```
-    or
-    ```bash
-    yarn install
-    ```
-
-### Running the Development Server
-
-To start the development server, run:
-
 ```bash
+git clone https://github.com/YOUR_USERNAME/ph-ee-ops-dashboard.git
+cd ph-ee-ops-dashboard
+npm install
 npm run dev
 ```
 
-The application will be available at `http://localhost:5173`.
+### Environment Variables
+Copy `.env.example` to `.env` before running:
+```bash
+cp .env.example .env
+```
 
-## Available Scripts
-
-- `npm run dev`: Starts the development server.
-- `npm run build`: Builds the application for production.
-- `npm run lint`: Lints the source code.
-- `npm run preview`: Serves the production build locally.
-
+App runs at `http://localhost:5173`
